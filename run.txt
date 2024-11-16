@@ -1,0 +1,8 @@
+& "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p
+
+
+ let q = "INSERT INTO user (id , username, email , password) VALUES ?";
+    let data =[];
+    for (let i = 1 ; i<=100;i++){
+      data.push(getrandomUser()); // 100 fake users
+    }
